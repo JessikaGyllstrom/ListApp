@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e8956d915.js" crossorigin="anonymous"></script>    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section-center">
+        <!--form-->
+        <form class="grocery-form">
+            <p class="alert"></p>
+            <h4>Grocery List</h4>
+            <div class="form-control">
+                <input type="text" id="grocery" placeholder="eggs"/>
+                <button type="submit" class="submit-btn">submit</button>
+            </div>
+        </form>
+        <!--list-->
+        <div class="grocery-container">
+            <div class="grocery-list">
+                <article class="grocery-item">
+                    <p class="title">item</p>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button type="button" class="delete-btn">
+                            <i class="fa-solid fa-trash"></i>                        
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <!--button-->
+            <button type="button" class="clear-btn">clear</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>  
+</body>
+</html>
