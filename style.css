@@ -1,18 +1,29 @@
 * {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.5px;
 }
 section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     align-items: center;
 }
 .grocery-container {
     margin-top: 10px;
     width: 60%;
-    /*visibility: hidden;*/
+    visibility: hidden;
+}
+h2 {
+    color: rgb(88, 30, 143);
+    text-transform: uppercase;
+}
+.grocery-form {
+    width: 60%;
+}
+.form-control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .show-container {
     visibility: visible;
@@ -25,14 +36,36 @@ section {
     justify-content: space-between;
     padding: 0px 20px;
     border-radius: 5px;
+    margin-bottom: 5px;
+}
+.grocery-item p {
+    font-size: 13px;
 }
 input {
-    min-width: 300px;
     padding: 5px;
+    width: 80%;
 }
-.submit-btn {
+button {
     border-style: none;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(153, 144, 152);
+    background-color: white;
+}
+.submit-btn {
+    background-color: rgb(201, 196, 206);
+}
+.clear-btn {
+    background-color: rgb(201, 242, 242);
+}
+.alert-danger {
+    color: rgb(150, 101, 101);
+    background-color: beige;
+}
+.alert-success {
+    color: rgb(143, 194, 216);
+    background-color: beige;
+}
+.delete-btn .edit-btn {
+    min-width: 40px;
+    min-height: 40px;
 }
